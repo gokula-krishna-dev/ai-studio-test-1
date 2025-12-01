@@ -40,12 +40,12 @@ const ApiKeyChecker: React.FC<Props> = ({ onReady, isReady }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-      <div className="bg-slate-800 border border-slate-700 rounded-xl p-8 max-w-md w-full text-center shadow-2xl">
-        <div className="mx-auto w-16 h-16 bg-indigo-500/20 rounded-full flex items-center justify-center mb-6">
-          <Lock className="w-8 h-8 text-indigo-400" />
+      <div className="bg-white border border-slate-200 rounded-xl p-8 max-w-md w-full text-center shadow-2xl">
+        <div className="mx-auto w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mb-6">
+          <Lock className="w-8 h-8 text-indigo-600" />
         </div>
-        <h2 className="text-2xl font-bold text-white mb-2">Access Required</h2>
-        <p className="text-slate-400 mb-6">
+        <h2 className="text-2xl font-bold text-slate-900 mb-2">Access Required</h2>
+        <p className="text-slate-600 mb-6">
           To generate high-quality 4K storyboards using Nano Banana Pro (Gemini 3 Pro), you must connect a paid GCP project API key.
         </p>
         
@@ -58,7 +58,7 @@ const ApiKeyChecker: React.FC<Props> = ({ onReady, isReady }) => {
         </button>
         
         <div className="mt-4 text-xs text-slate-500">
-          <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" rel="noreferrer" className="underline hover:text-slate-300">
+          <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" rel="noreferrer" className="underline hover:text-slate-800">
             View billing documentation
           </a>
         </div>
